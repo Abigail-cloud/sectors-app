@@ -1,0 +1,25 @@
+{
+  "name": "sectors-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run dev --prefix server --ignore client",
+    "client": "npm start --prefix client",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \" npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abigail-cloud/sectors-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abigail-cloud/sectors-app/issues"
+  },
+  "homepage": "https://github.com/Abigail-cloud/sectors-app#readme",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
+}

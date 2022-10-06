@@ -29,7 +29,7 @@ const cards= [
     {
       id: 4,
       image:
-        'https://img.freepik.com/free-vector/department-store-interior-with-customers-people-shopping-city-mall-walking-through-building-halls-past-windows-carrying-bags-market-sale-discount-s_74855-8328.jpg?w=2000',
+        'https://img.freepik.com/free-vector/people-shopping-store-waiting-line-queue-flat-vector-illustration-cartoon-seller-standing-greeting-customers-sale-discount-special-offer-concept_74855-10127.jpg?w=2000',
       name: 'Retail Sector',
       quote:
         ' Blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. ',

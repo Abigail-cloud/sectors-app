@@ -24,6 +24,10 @@ app.use(express.json())
 //     res.send('Welcome to sectors')
 // })
 
+app.get('/api/v1', (req, res) => {
+     // throw new Error('error')
+    res.send('SECTORS') })
+
 //Use router
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/sector', sectorRouter);
