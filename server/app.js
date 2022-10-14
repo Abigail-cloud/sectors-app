@@ -2,7 +2,9 @@ import express from "express";
 const app = express();
 import dotenv from 'dotenv';
 dotenv.config()
-import 'express-async-errors'
+import 'express-async-errors';
+import morgan from 'morgan';
+
 
 //Import DB
 import connectDB from "./db/connect.js";
@@ -16,6 +18,13 @@ import sectorRouter from './routes/sector.js';
 //Middleware
 import notFoundMiddleware from './middleware/not-found.js';
 import errorHandlerMiddleware from './middleware/error-handler.js';
+import authenticateUser from './middleware/auth.js';
+
+if (process.env.NODE_ENV !=='production') {
+    app.use(morgan('dev'))
+}
+
+
 
 app.use(express.json())
 
@@ -26,11 +35,12 @@ app.use(express.json())
 
 app.get('/api/v1', (req, res) => {
      // throw new Error('error')
-    res.send('SECTORS') })
-
+    res.send('SECTORS')
+})
+    
 //Use router
 app.use('/api/v1/auth', authRouter);
-app.use('/api/v1/sector', sectorRouter);
+app.use('/api/v1/sector', authenticateUser, sectorRouter);
 
 
 app.use(notFoundMiddleware);

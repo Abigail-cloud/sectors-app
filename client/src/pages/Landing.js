@@ -5,6 +5,7 @@ import Wrapper from '../assets/wrappers/LandingPage';
 import {Logo}  from '../components'
 import Slider from './slider/App';
 import Row from './Tools/App';
+import { Link } from 'react-router-dom'
 
 
 
@@ -21,14 +22,13 @@ const landing = () => {
             Sector <span>record</span> app
           </h1>
           <p>
-            I'm baby wayfarers hoodie next level taiyaki brooklyn cliche blue
-            bottle single-origin coffee chia. Aesthetic post-ironic venmo,
-            quinoa lo-fi tote bag adaptogen everyday carry meggings +1 brunch
-            narwhal.
+          Before the recent COVID-19 pandemic, jobs were being created by the millions, and wage growth was on the rise. What industries propelled America’s self-contained economy?
+
+The five sectors that are have helped fuel the economy’s growth in the wake of the latest economic downturn. The selection is based on data from the Bureau of Labor Statistics (BLS) and industry perspectives.
           </p>
-          <button className='btn btn-hero'>
+          <Link to='/register' className='btn btn-hero'>
             Login/Register
-          </button>
+          </Link>
         </div>
         <img src={main} alt='Sector search' className='img main-img' />
       </div>

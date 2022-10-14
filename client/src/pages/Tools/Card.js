@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const Book = ({ img, title, desc }) => {
  
  
@@ -14,9 +14,9 @@ const Book = ({ img, title, desc }) => {
    <img src={img} alt='' className='card' />
    <h1 >{title}</h1>
    <h4>{desc}</h4>
-   <button className='btn btn-hero'>
-            Check It Out
-          </button>
+   <Link to='/register' className='btn btn-hero'>
+            Check it out
+          </Link>
   </main>
  );
 };

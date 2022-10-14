@@ -39,9 +39,9 @@ const SectorsContainer = () => {
       <h5>
         {totalSectors} sector{sectors.length > 1 && 's'} found
       </h5>
-      <div className='jobs'>
-        {sectors.map((job) => {
-          return <Sector key={job._id} {...job} />
+      <div className='sector'>
+        {sectors.map((sector) => {
+          return <Sector key={sector._id} {...sector} />
         })}
       </div>
       {numOfPages > 1 && <PageBtnContainer />}

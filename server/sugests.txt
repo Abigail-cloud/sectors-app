@@ -1,0 +1,9 @@
+statusOptions: [
+    { 'Healthcare': ['Health information manager', 'Doctor', 'Nurse', 'Medical laboratory scientist', 'Medical physicist', 'Nuclear medicine technologist', 'others'] },
+    { 'Technology': ['Software engineer', 'Web Analytics Developer', 'SEO Consultant', 'Content Manager', 'Digital marketing manager', 'Information Architect', 'Data Scientist', 'others'] },
+    { 'Construction': ['Building services engineers', 'Building surveyors', 'Civil and geotechnical engineers', 'Site managers', 'Landscape architects ', 'Architects and architectural technologists', 'others'] },
+    {'Agriculture': ['Agricultural Economist', 'Vet. Doctor', 'Animal Scientist', 'Plant Scientist', 'Precision Agriculture Specialist', 'Bioprocessing Engineer', 'others']},
+    { 'Entertainment': ['Actor', 'Film Crew', 'Choreographer', 'Publicist', 'Photographer', 'Video Editor', 'Producers', 'others'] },
+    { 'Retail': ['Sales Associate', 'Cahiers', 'Customer Service Representatives', 'Visual mechandisers', 'Buyers', 'Store managers', 'others'] },
+    'others'
+  ]

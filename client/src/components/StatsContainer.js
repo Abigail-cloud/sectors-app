@@ -8,21 +8,49 @@ const StatsContainer = () => {
 
   const defaultStats = [
     {
-      title: 'pending applications',
+      title: 'Healthcare',
       count: stats.pending || 0,
       icon: <FaSuitcaseRolling />,
       color: '#e9b949',
       bcg: '#fcefc7',
     },
     {
-      title: 'interviews scheduled',
+      title: 'Technology',
       count: stats.interview || 0,
       icon: <FaCalendarCheck />,
       color: '#647acb',
       bcg: '#e0e8f9',
     },
     {
-      title: 'jobs declined',
+      title: 'Construction',
+      count: stats.declined || 0,
+      icon: <FaBug />,
+      color: '#d66a6a',
+      bcg: '#ffeeee',
+    },
+    {
+      title: 'Retail',
+      count: stats.interview || 0,
+      icon: <FaCalendarCheck />,
+      color: '#647acb',
+      bcg: '#e0e8f9',
+    },
+    {
+      title: 'Agriculture',
+      count: stats.declined || 0,
+      icon: <FaBug />,
+      color: '#d66a6a',
+      bcg: '#ffeeee',
+    },
+    {
+      title: 'Entertainment',
+      count: stats.interview || 0,
+      icon: <FaCalendarCheck />,
+      color: '#647acb',
+      bcg: '#e0e8f9',
+    },
+    {
+      title: 'others',
       count: stats.declined || 0,
       icon: <FaBug />,
       color: '#d66a6a',

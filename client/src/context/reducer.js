@@ -122,7 +122,7 @@ import {
     if (action.type === CLEAR_VALUES) {
       const initialState = {
         isEditing: false,
-        editJobId: '',
+        editSectorId: '',
         position: '',
         company: '',
         jobLocation: state.userLocation,
@@ -164,8 +164,8 @@ import {
       return {
         ...state,
         isLoading: false,
-        jobs: action.payload.jobs,
-        totalJobs: action.payload.totalJobs,
+        sectors: action.payload.sectors,
+        totalSectors: action.payload.totalSectors,
         numOfPages: action.payload.numOfPages,
       }
     }
@@ -175,7 +175,7 @@ import {
       return {
         ...state,
         isEditing: true,
-        editJobId: _id,
+        editSectorId: _id,
         industry,
         position,
         company,

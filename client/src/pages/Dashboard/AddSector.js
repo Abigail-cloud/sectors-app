@@ -7,7 +7,7 @@ const AddSector= () => {
     isLoading,
     isEditing,
     showAlert,
-      displayAlert,
+    displayAlert,
     industry,
     position,
     company,
@@ -18,7 +18,7 @@ const AddSector= () => {
     statusOptions,
     handleChange,
     clearValues,
-    createJob,
+    createSector,
     editSector,
   } = useAppContext()
 
@@ -33,7 +33,7 @@ const AddSector= () => {
       editSector()
       return
     }
-    createJob()
+    createSector()
   }
   const handleSectorInput = (e) => {
     const name = e.target.name

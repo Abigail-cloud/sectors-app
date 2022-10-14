@@ -24,8 +24,8 @@ const Sector = ({
       <header>
         <div className="main-icon">{company.charAt(0)}</div>
         <div className="info">
-        <p>{industry}</p>
           <h5>{position}</h5>
+          <p>{industry}</p>
           <p>{company}</p>
         </div>
       </header>
@@ -39,7 +39,7 @@ const Sector = ({
         <footer>
           <div className="actions">
             <Link
-              to="/add-job"
+              to="/add-sector"
               className="btn edit-btn"
               onClick={() => setEditSector(_id)}
             >

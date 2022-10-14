@@ -1,10 +1,11 @@
-import CustomServerError from "./custom-error.js";
+// import CustomServerError from "./custom-error.js";
 import BadRequestError from "./bad-request.js";
 import NotFoundError from "./not-found.js";
+import UnAuthenticatedError from "./unauthenticated.js";
 
 
 export  {
-    CustomServerError,
     BadRequestError, 
-    NotFoundError
+    NotFoundError,
+    UnAuthenticatedError
 }

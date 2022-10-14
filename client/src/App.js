@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Register, Landing, Error, ProtectedRoute } from './pages'
 import {
-  AllJobs,
+  AllSector,
   Profile,
   SharedLayout,
   Stats,
-  AddJob,
+  AddSector,
 } from './pages/dashboard'
 
 function App() {
@@ -21,8 +21,8 @@ function App() {
           }
         >
           <Route index element={<Stats />} />
-          <Route path='all-jobs' element={<AllJobs />} />
-          <Route path='add-job' element={<AddJob />} />
+          <Route path='all-sector' element={<AllSector />} />
+          <Route path='add-sector' element={<AddSector />} />
           <Route path='profile' element={<Profile />} />
         </Route>
         <Route path='/register' element={<Register />} />
